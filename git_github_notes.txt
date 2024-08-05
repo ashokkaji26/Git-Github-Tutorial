@@ -199,6 +199,62 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
 
 
 
+* If we commit any changes in remote repo and if we don't have those commits in our local repo then, we have
+  to pull those commits to our local repo, so that same chagnes appears on our local repos too.
+--> git pull origin main :- This will fetch and merge the changes from the remote main branch into your local main branch.
+
+
+
+
+                ********* What is divergent branches & how to solve this issue ***********
+
+* In Git, "divergent branches" refer to a situation where the local branch and the remote branch have both made changes independently of each other.
+ This means that there are commits in the remote branch that are not in the local branch,
+  and there are commits in the local branch that are not in the remote branch.
+
+---> Example Scenario :-
+                     1. Initial State:- Both local and remote branches are identical.
+                     2. Remote Changes:- Someone else pushes new commits to the remote branch.
+                     3. Local Changes:- You make new commits to your local branch without pulling the latest changes from the remote branch.
+                                         Result.
+
+---> Result of this :- Now, your local branch and the remote branch have diverged because they have different sets of commits.
+
+---> Resolving Divergent Branches:-
+
+---> To reconcile these differences, you need to decide how to integrate the changes:
+
+1. Merge:- Combines the changes from the remote branch into your local branch, creating a merge commit.
+--> How to do this:- git pull origin main --no-rebase
+
+
+2. Rebase:- Reapplies your local commits on top of the commits from the remote branch.
+--> How to do this:- git pull origin main --rebase
+
+
+3. Fast-forward Only:- Updates your branch only if it can be fast-forwarded, meaning no local commits would be overwritten.
+--> How to do this:- git pull origin main --ff-only
+
+
+---> Choosing a Strategy:- 
+1. Merge: Keeps the history of both branches, useful for preserving the context of changes.
+2. Rebase: Creates a linear history, useful for cleaner project history.
+3. Fast-forward Only: Ensures no local changes are lost, useful when you want to avoid complex merges.
+
+---> Understanding and choosing the right strategy helps maintain a clean and understandable project history.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
