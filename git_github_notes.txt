@@ -2,180 +2,295 @@
 
 NOTE:- Here you will find complete step by step guid for using Git and Github.
 
+
 1. Git - Git is a version control system, which is free and open source.
+
 
 2. Version control system  :- it is an online tool or software that helps to track changes in codes.
 
+
 3. Version control system :- 1. Track history 2. Help to collaborate.
 
+
 4. Github - Github is a website where we upload our projects or repositories(folders) online and GitHub is based on git.
+
 
 5. README.md(markdown) - Hm jo v project ya repository bnate h, uske bare me jo details deni h kisi padhne wale ko , 
    un sari details ko hm README file ke under dalte hai.
 
+
 6. Commit - hmne code me koi change kiya h. Repository ke under koi v change hote hai wo 2 steps me hota hai :-
                                        1. Add 2. Commit :- commit means changes ko finally accept car liya gaya.
 
+
 7. Green color :- jo chije positive add ki, and red color :- jo chije hmne delete ki.
+
 
 8. Github ke repository me agar koi commit karta hai to latest wala commit us file ke samne dikhta hai.
 
+
 9. Configuring Git :- Kuchh basic chije pahle se uske under set kar dena. 
+
 
 10. git config --global user.name “Ashok Kaji”        ---> to set username.
 
+
 11. git config --global user.email “ashokkaji77@gmail.com”          ---> to set email.
+
 
 12. git config --list       ---> it will show configured details.
 
+
 13. Clone :- It means copy or duplicate.
+
 
 14. git clone link    ---> to clone any repository from GitHub to our local machine.
 
+
 15. The only reason to clone a repo is that we want to change something on it.
+
 
 16. If we make any change in git files in vs code, file’s color becomes yellow along with a M(modified) warning.
     Showing that you can’t normally change a git files.
 
+
 17. git status ---> Displays the state of the code. 
 
+
 18. File status Lifecycle :- New File(Untracked)———add———> Unmodified(No changes) ———edit the file———> Modified ———add(stage the file)——> Staged ———commit———> Unmodified.
+
 
 19. Jab v hm apne repository me koi change karte h, us changes ko pahle hm add karenge aur is state ko kahte hai “staged”,
     then us change ko hm commit karenge, aur ye hota h final state jis me change ka stamp lag gaya.
 
+
 20. git add file_name   ---> adds new or modified files in your working directory to the git staging area.  
+
 
 21. git add .    --—> add all files(new or modified) - (staged).
 
+
 22. Hm kisi project me bht Sare changes karenge aur un sare changes ko add karke hm ek bar commit karenge.
+
 
 23. Commit :- one set of reasonably good changes.
 
+
 24. git commit -m “important  message”    ---> it will commit all added files to the local computer only.
+
 
 25. Ab hmne jo add or commit apne local computer par kiya agar chahte hai ki wo commit or changes Github par dikhe,
     to uske liye hm push command ka use karenge.
 
+
 26. Push :- upload local repository content to GitHub repository.
+
 
 27. git push origin main   ---> To push loacl repository content to the github repository.
     origin- wo location jaha hamari github ki ye repository hai, jaha se hm code fetch or push karenge.
 
+
 28. Apne local computer ke under GitHub repository me koi project create karna chahte hai Taki git use project ko track kar paye.
+
 
 29. init :- used to create a new GitHub repository. Which will be tracked by git.
 
+
 30. Apne local computer me Kisi folder/project ko GitHub repository banane ke liye us folder me ja kar “git init” karna hota h,
     taki wo folder GitHub repository ban jaye aur git use track kar paye.
+
 
 31. Git init karne ke bad project ko GitHub me push karne ke liye git remote add karna padega and for that,
     first we have to create an epmty repo in GitHub.
     *** NOTE:- You must create an empty repository on github, it should even contain README.md file.
 
+
+
+
 32. git remote add origin git_repo_link   ---> link of empty repo which we have created on github where we want to push our local repo's content. 
+
+
+
 
 33. git remote -v   ---> to verify remote :-shows where the local project  will go on GitHub.
 
+
+
+
 34. git branch     ---> to check current branch.
+
+
+
 
 35. git branch -M main    ---> to rename branch.
 
+
+
+
 36. git push -u origin main   ---> origin ko set kar rahe h.    -u means upstream ko create karna.
     Ye line likhne ke bad hm simply jab v push karenge "git push" likh sakte hai.
+
+
+
 
 37. What is Branch in git?? ———> Branch ka basic mtlb ye h ki, suppose hm koi project bana rahe h,
     aur us project me hme koi new features add karna h ya koi aur new files add karna h, to directly hm main folder  me wo changes nhi karenge, 
     instead of that hm us main folder ka ek copy bna lenge jise hm “branch” kahte hai. aur ab us copied folder me jo v changes karna hai wo karenge,
     aur sari changes karne ke bad lastly us new branch ko hm apne main branch ke sath merge kar denge.
 
+
+
+
 38. Suppose koi bada project hai, aur isme bht sare developers kam kar rahe h, to ek hi sath sare developers ek hi folder or file me ek sath kam nhi kar sakte,
     qki sabka apna seperate kam hoga, ya aisa nhi hota h ki ek developer Apna code likh raha h aur dusre developer wait kar rahe h,
     ki uska kam complete ho jayega to mai code likhunga, to sare developers main folder ka ek copy bna lenge jise branch banana kahte hai,
     aur Sarę developers apne apne branch me Apna code likh sakte hai simultaneously. 
 
+
+
+
 39. Branching bht important hai, qki ye level of access define karta h, ki kaun se user ke pass kaun se feature ka access hai.
 
+
+
+
 40. Branches ka use hm isliye karte h Taki, 1.  Development process smooth ho jaye and 2. Hierarchy ache se maintain ho. 3. Collaboration.
+
+
 
 41. Alan alag branches me kam karne ke bad lastly sare branches ko main branch ke sath merge karte hai aur merge karne ka mtlb hota hai,
     sare branches me se ek common code nikal kar lana.
 
+
+
 42. git branch ---> to check branch.
+
+
 
 43. git branch -M branch_name ---> to rename branch.
 
+
+
 44. git checkout branch_name ---> to navigate between different branches.
+
+
 
 45. git checkout -b new_branch_name ---> to create new branch.
 
+
+
 46. git branch -d branch_name ---> to delete a branch.
+
+
 
 47. Branches ke names should be meaningful.
 
+
+
 48. Agar hm apne main branch se push karte hai to git repo me bas main branches ke contents push hote hai, other branches ke contents push nhi hote h.
+
+
 
 49. Dusre branches ke contents ko push karne ke liye pahle un branches ke liye upstream set karna padega. 
 
+
+
 50. git push --set-upstream origin feature  --—> origin ke feature branch me push karenge.
+
+
 
 51. Upstream set karne ke bad hm origin ke respective branch me push kar denge aur push karne ke bad,
     hm main branch ke sath codes ko kaise merge karenge- uske liye use karte h pull request.
 
+
+
 52. git diff branch_name ---> to compare branches , commits , files and more.
+
+
 
 53. git merge branch_name ---> to merge 2 branches.
 
+
+
 54. Straight forward way of merging two branches --->using pull request(PR).
 
+
+
 55. Pull Request ka kam hota h - Codes ko merge karwana
+
+
 .
 56. Pull Request :- It lets you tell others about changes you have pushed to a branch in a repository on GitHub.
 
+
+
 57. To jab v hm ek branch ke changes ko dusre branch ke sath merge karna chahte hai to Pull  Request create kar sakte hai.
+
+
 
 58. Conflicts tab aate hai jab main branch ke under same file me same changes ho gye aur dusre branch ke under v same file me same changes ho gye,
     then conflicts aa jate hai. Because GitHub confuses  ki kaun sa changes ko lena h.
 
+
+
 59. PR ko merge karna v apne aap me ek commit hota h. 
+
+
 
 60.  Hm jo Pull Request karke contents ko merge karte h, wo GitHub repository me karte hai , usse wo local machines me merge nhi hote hai,
      to un contents ko local machine me dekhne ke liye ya merge karne ke liye kya karenge??
 
+
+
 61. Local ——Push——> Github ——Pull——> Local.
+
+
 
 62. Sare changes karne ke bad finally jab hm sare branches ko main branch ke sath merge karte hai to sare contents main branch me aa jate h,
     aur ye Sab hota hai GitHub repository me, isliye jo v content merge hoga wo GitHub repo ke main branch me hoga ,
     wo local machine ke main branch me merge nhi hoga isliye agar un merged contents ko apne local machine ke main branch me dekhna h to hme pull karna padega.
 
+
 63. git pull origin main ---> Used to fetch and download content from a Github repository  and immediately update the local repo to match that content.
 
+
 64. Merge Conflict :- an event that takes place when git is unable to automatically resolve differences in code between two commits.
+
 
 65. Suppose hmne kisi branch ke kisi file me kuchh change kara, aur dusre branch me v same file me same jagah Kuchh aur change kar diva, to is condition me merging ke time git confuse ho jayega ki kis wale file ki change ko accept karna h, aur aise condition me conflicts arise ho jayega.
 
 
 
+
 1. ***********Fixing Mistakes*********************
+
 2. Hmne koi change ko staged kar diya mtlb bas add kiya commit nhi kıya to use unadd kaise kare :- 
    git reset file_name    --->  (Kisi single file ke add ko  unadd karne ke liye).
 
+
 3. Multiple files ke last add ko unadd karne ke liye :- git reset
+
 
 4. Agar glti se hmne koi commit kar diya aur us commit ko uncommit karna ho to :- 
    git reset HEAD~1      ---> [for one commit]       (HEAD- last commit, Head is a pointer pointing to last commit.)
 
+
 5. Kayi bar aisa hota hai ki hm ek nhi kayi sare commits ko undo(uncommit) karna chahte hai.  Then :-
    git reset hash(commit code)       -——> Isme jo extra changes the wo dikhenge.
 
+
 6. git log :- us branch ki sari ki sari commits ki information show ho Jati h. In a revers order.
 
+
 7. git log karne ke bad har commit ke samne ek code dikhega use “hash” kahte hai.
+
 
 8. But hm chahte h ki ek se jyada commit ko uncommit karne ke bad pahle wali changes hme na dikte uske liye karte h:-
    git reset --hard hash(commit code)
 
+
 9. Open source contributions ka basic mtlb yhi hota h ki, kisi ne apni repository banayi hai aur mujhe bhi usme changes karke contribution karna h.
+
 
 
 
@@ -183,19 +298,29 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
                                                                       
 
                                                     *********  What is Forking ??  ******************
+
 ———> A fork is a new repository that shares code and visibility settings with the original “Upstream” repository.
+
 
 ———> Fork is a rough copy.
 
+
 ——> Suppose kisi ne ek repository banayi aur hm us repository me Kuchh change karna chahte hai ya us repo me Kuchh contribution karna chahte h, to hm directly uske GitHub repo me ja kar changes nhi kar sakte h, uske liye hme us main repo ko fork karna padega, mtlb us original repo ka ek copy banana padega apne GitHub account me. 
+
 
 ———> kisi ka repo fork karne ka mtlb h ki uske Sare codes aur contents hmare account ke repo me aa jayega aur hm yha changes kar sakte h.
 
+
 ——> fork karne ke bad jab hmne changes kar diya to us changes ko original repo me contribute karne ke liye hme PULL REQUEST create karna padega.
+
 
 ———> PULL REQUESTs help you collaborate on code with other people.
 
+
 ———> Pull request sirf ek hi account ke do branches ko merge karne ke liye hi nhi balki, kisi dusre account ke repo me agar hme apna code merge karna ho to uske liye v hm PULL REQUESTs create karenge.
+
+
+
 
 
 
@@ -207,25 +332,32 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
 
 
                 ********* What is divergent branches & how to solve this issue ***********
+                
 
 * In Git, "divergent branches" refer to a situation where the local branch and the remote branch have both made changes independently of each other.
  This means that there are commits in the remote branch that are not in the local branch,
   and there are commits in the local branch that are not in the remote branch.
+  
 
 ---> Example Scenario :-
                      1. Initial State:- Both local and remote branches are identical.
                      2. Remote Changes:- Someone else pushes new commits to the remote branch.
                      3. Local Changes:- You make new commits to your local branch without pulling the latest changes from the remote branch.
                                          Result.
+                                         
 
 ---> Result of this :- Now, your local branch and the remote branch have diverged because they have different sets of commits.
 
+
 ---> Resolving Divergent Branches:-
+
 
 ---> To reconcile these differences, you need to decide how to integrate the changes:
 
+
 1. Merge:- Combines the changes from the remote branch into your local branch, creating a merge commit.
 --> How to do this:- git pull origin main --no-rebase
+
 
 
 2. Rebase:- Reapplies your local commits on top of the commits from the remote branch.
@@ -234,6 +366,8 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
 
 3. Fast-forward Only:- Updates your branch only if it can be fast-forwarded, meaning no local commits would be overwritten.
 --> How to do this:- git pull origin main --ff-only
+
+
 
 
 ---> Choosing a Strategy:- 
