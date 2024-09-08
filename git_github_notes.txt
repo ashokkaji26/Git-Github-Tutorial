@@ -90,7 +90,7 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
     origin- wo location jaha hamari github ki ye repository hai, jaha se hm code fetch or push karenge.
 
 
-28. Apne local computer ke under GitHub repository me koi project create karna chahte hai Taki git use project ko track kar paye.
+28. Apne local computer se GitHub repository me koi project create karna chahte hai Taki git use project ko track kar paye.
 
 
 29. init :- used to create a new GitHub repository. Which will be tracked by git.
@@ -102,7 +102,8 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
 
 31. Git init karne ke bad project ko GitHub me push karne ke liye git remote add karna padega and for that,
     first we have to create an epmty repo in GitHub.
-    *** NOTE:- You must create an empty repository on github, it should even contain README.md file.
+
+    *** NOTE:- You must create an empty repository on github, it should not even contain README.md file.
 
 
 
@@ -332,19 +333,19 @@ NOTE:- Here you will find complete step by step guid for using Git and Github.
 
 
                 ********* What is divergent branches & how to solve this issue ***********
-                
+
 
 * In Git, "divergent branches" refer to a situation where the local branch and the remote branch have both made changes independently of each other.
  This means that there are commits in the remote branch that are not in the local branch,
   and there are commits in the local branch that are not in the remote branch.
-  
+
 
 ---> Example Scenario :-
                      1. Initial State:- Both local and remote branches are identical.
                      2. Remote Changes:- Someone else pushes new commits to the remote branch.
                      3. Local Changes:- You make new commits to your local branch without pulling the latest changes from the remote branch.
                                          Result.
-                                         
+
 
 ---> Result of this :- Now, your local branch and the remote branch have diverged because they have different sets of commits.
 
